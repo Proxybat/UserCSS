@@ -5,6 +5,6 @@
 1. A dropdown with toyhou.se safe fonts.
 2. A text input where you can type whatever font your computer has. (You need to select "Custom" on the dropdown first.)
 
-Here are some screenshots below (open in new tab for full resolution/size):
+<s>Here are some screenshots below (open in new tab for full resolution/size):</s>
 
 <h3>EDIT: Ok so from my end it looks like the images are broken ok idk why. So just open the image files above until I fix it. >:( </h3>

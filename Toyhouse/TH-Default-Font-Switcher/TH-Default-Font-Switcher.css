@@ -51,10 +51,18 @@ font23 "Verdana" <<<EOT 'Verdana', sans-serif EOT;
    
 body {
     font-family: var(--font-list);
+	
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 1.5;
+	
 }
 
 button, input, optgroup, select, textarea {
 	font-family: var(--font-list);
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
 }
 
 .tagit-label, span{
@@ -64,11 +72,13 @@ button, input, optgroup, select, textarea {
 /*The tooltip class below. Delete this if you just want the default tooltip font.*/
 
 .fr-tooltip {
-	font-family: var(--font-list);	
+	font-family: var(--font-list);
+	
 }
 
 .fr-popup {
-   font-family: var(--font-list);	
+   font-family: var(--font-list);
+	
 }
 
 .ui-widget button, .ui-widget input, .ui-widget select, .ui-widget textarea {

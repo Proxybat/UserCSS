@@ -8,7 +8,7 @@
 Here are some screenshots below (open in new tab for full resolution/size):
 
 <b>Georgia font:</b><br>
-<img src="https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th%20font%20switcher%20mockup%202.png" style="max-width: 100%;width: 30%;">
+<img src="https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-2.png?token=GHSAT0AAAAAABTK64WTFULLAPQ467ENYOSGYS7CARQ" style="max-width: 100%;width: 30%;">
 
 <b>Comic Sans ms / Cursive font:</b><br>
-<img src="https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th%20font%20switcher%20mockup.png" style="max-width: 100%;width: 30%;">
+<img src="https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-1.png?token=GHSAT0AAAAAABTK64WTLW2BTIBUMG34NXOKYS7CAQA" style="max-width: 100%;width: 30%;">

@@ -1,0 +1,77 @@
+/* ==UserStyle==
+@name           TH Default Font Switcher
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    `Changes the default font on ToyHouse.`
+@author         Proxybat
+@license        CC-BY-4.0
+
+
+@advanced dropdown font "Font Family" {
+font1 "Default (Favorit)" <<<EOT "-apple-system","system-ui", "BlinkMacSystemFont", "Segoe UI", Roboto, Helvetica Neue, Arial, sans-serif EOT;
+font7 "Custom" <<<EOT var(--custom-font) EOT;
+font2 "Arial" <<<EOT arial, sans-serif EOT;
+font3 "Arial Narrow" <<<EOT Arial Narrow, Geneva, Tahoma, sans-serif EOT;
+font4 "Arial Black" <<<EOT 'Arial Black', Arial, Helvetica, sans-serif EOT;
+font5 "Brush Script mt" <<<EOT Brush Script mt EOT;
+font6 "Calibri" <<<EOT Calibri EOT;
+font8 "Cambria" <<<EOT 'Cambria', serif EOT;
+font9 "Candara" <<<EOT 'Candara', sans-serif EOT;
+font10 "Cursive" <<<EOT 'Cursive', comic sans ms, sans-serif EOT;
+font11 "Fantasy" <<<EOT 'Fantasy',Papyrus, sans-serif EOT;
+font12 "Garamond" <<<EOT 'Garamond',Garamond Classic FS, serif EOT;
+font13 "Helvetica" <<<EOT 'Helvetica', serif EOT;
+font14 "Courier" <<<EOT 'Courier New',Courier, serif EOT;
+font15 "Lucida Bright" <<<EOT 'Lucida Bright', sans-serif EOT;
+font16 "Monospace" <<<EOT 'Monospace', serif EOT;
+font17 "ms gothic" <<<EOT 'ms gothic', serif EOT;
+font18 "Perpetua" <<<EOT 'Perpetua', serif EOT;
+font19 "Sans-Serif" <<<EOT 'Sans-Serif', 'Sans-Serif', sans-serif EOT;
+font20 "Georgia" <<<EOT 'Georgia', serif EOT;
+font21 "Serif" <<<EOT Serif, Times, 'Serif', Times, 'Times New Roman' serif EOT;
+font22 "Tahoma" <<<EOT 'tahoma',sans-serif EOT;
+font23 "Verdana" <<<EOT 'Verdana', sans-serif EOT;
+}
+
+@advanced text customfont "Custom Font (Select 'Custom' Above)" "Test"
+==/UserStyle== */
+
+
+
+@-moz-document domain("toyhou.se") {
+   /* Insert code here... */
+   /*For when your windows themes font is hard to read*/
+/*font fix for windows themes fonts that are shit*/
+/*font list
+ms mincho
+ms ui gothic*/
+
+   /*This is all the stuff for the fonts!*/
+   
+:root{
+   --font-list:/*[[font]]*/;
+   --custom-font: /*[[customfont]]*/;
+}
+   /*comic sans ms*/
+   
+body {
+    font-family: var(--font-list),arial,tahoma;
+	/*font-family: ,tahoma,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;*/
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 1.5;
+	
+}
+
+button, input, optgroup, select, textarea {
+	font-family: var(--font-list),arial,tahoma;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+.tagit-label, span{
+   font-family: var(--font-list);
+}
+}
+

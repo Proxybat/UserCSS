@@ -1,4 +1,4 @@
-<h1><b>May 20th 2022 UPDATE:</b>Please disable this whenever you're using the site's built-in code editor!</h1>
+<h1><b>May 20th 2022 UPDATE:</b> Please disable this whenever you're using the site's built-in code editor!</h1>
 <p>Mainly due to the fact that the character spacing is f*cked up, and from what I know I don't know how to fix it.</p>
 <p><b>Until then please disable this userstyle whenever you're using the site's built-in code editor!</b></p>
 

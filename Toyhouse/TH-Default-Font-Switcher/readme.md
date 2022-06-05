@@ -1,6 +1,7 @@
 # May 20th 2022 UPDATE:</b> Please disable this whenever you're using the site's built-in code editor!
 
-<p>Mainly due to the fact that the character spacing is f*cked up, and from what I know I don't know how to fix it.</p>
+Mainly due to the fact that the character spacing is fucked up, and from what I know I don't know how to fix it.
+
 #### Until then please disable this userstyle whenever you're using the site's built-in code editor
 
 ---
@@ -12,11 +13,10 @@
 1. A dropdown with toyhou.se safe fonts.
 2. A text input where you can type whatever font your computer has. (You need to select "Custom" on the dropdown first.)
 
-~~Here are some screenshots below (open in new tab for full resolution/size):~~
+### Here are some screenshots below (open in new tab for full resolution/size):
 
-### EDIT: Ok so from my end it looks like the images are broken ok idk why. So just open the image files above until I fix it. >:(
+> To view the full page previews check out the "Preview" folder!
 
+![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/Preview/th-font-switcher-screenshot-1-mini.png "TH font-switcher screenshot 1 Mini")
 
-![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-1-mini.png "TH font-switcher screenshot 1 Mini")
-
-![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-2-mini.png "TH font-switcher screenshot 2 Mini")
+![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/Preview/th-font-switcher-screenshot-2-mini.png "TH font-switcher screenshot 2 Mini")

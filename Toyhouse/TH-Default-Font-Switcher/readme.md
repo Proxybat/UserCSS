@@ -17,4 +17,6 @@
 ### EDIT: Ok so from my end it looks like the images are broken ok idk why. So just open the image files above until I fix it. >:(
 
 
-![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-1.png "TH font-switcher screenshot 1")
+![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-1-mini.png "TH font-switcher screenshot 1 Mini")
+
+![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/th-font-switcher-screenshot-2-mini.png "TH font-switcher screenshot 2 Mini")

@@ -18,5 +18,7 @@ Mainly due to the fact that the character spacing is fucked up, and from what I 
 > To view the full page previews check out the "Preview" folder!
 
 ![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/Preview/th-font-switcher-screenshot-1-mini.png "TH font-switcher screenshot 1 Mini")
+> Above is a screenshot of the default font switcher in action. The example font here is Comic Sans/cursive.
 
 ![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Toyhouse/TH-Default-Font-Switcher/Preview/th-font-switcher-screenshot-2-mini.png "TH font-switcher screenshot 2 Mini")
+> Above is a screenshot of the default font switcher in action. The example font here is Georgia.

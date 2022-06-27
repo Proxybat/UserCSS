@@ -6,7 +6,7 @@ Makes the user icons in the user carousel smaller, removes the username text, an
 # Preview
 
 ![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Deviantart/DeviantArt%20DYWP/Preview/DYWP-screenshot-mini.png "DeviantArt Deviants you watch page.")
-> Above is a screenshot of the default font switcher in action. The example font here is Comic Sans/cursive.
+> Above is a screenshot of the page with the userstyle enabled. (I'm using the classic on-site deviantart theme.)
 
 
 # Disclaimer!

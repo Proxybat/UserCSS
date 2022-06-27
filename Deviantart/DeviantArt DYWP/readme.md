@@ -1,6 +1,7 @@
 # "Deviants You Watch" page Tweaks.
 
--Some minor tweaks for the "Deviants You Watch" page.
+Some minor tweaks for the "Deviants You Watch" page.
+---
 
 * Makes the user icons in the user carousel smaller.
 * Removes the username text in the user carousel.

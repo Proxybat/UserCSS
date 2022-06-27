@@ -8,9 +8,6 @@ Some minor tweaks for the "Deviants You Watch" page.
 
 - Overall takes up less space.
 
-Makes the user icons in the user carousel smaller, removes the username text, and takes up less space overall. 
-
-
 ## Preview
 
 ![alt text](https://raw.githubusercontent.com/Proxybat/UserCSS/main/Deviantart/DeviantArt%20DYWP/Preview/DYWP-screenshot-mini.png "DeviantArt Deviants you watch page.")

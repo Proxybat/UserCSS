@@ -14,4 +14,3 @@ Makes the user icons in the user carousel smaller, removes the username text, an
 # Disclaimer!
 
 This is a work in progress. Please keep that in mind when using this!
-m

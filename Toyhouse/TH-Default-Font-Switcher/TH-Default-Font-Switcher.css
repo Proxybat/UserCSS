@@ -6,7 +6,7 @@
 @namespace      https://github.com/Proxybat
 @license        CC-BY-4.0
 @homepageURL https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Default-Font-Switcher
-@updateURL https://github.com/Proxybat/UserCSS/blob/main/Toyhouse/TH-Default-Font-Switcher/TH-Default-Font-Switcher.css
+@updateURL https://userstyles.world/api/style/4255.user.css
 @supportURL https://github.com/Proxybat/UserCSS/issues
 
 @advanced dropdown font "Font Family" {
@@ -37,56 +37,47 @@ font23 "Verdana" <<<EOT 'Verdana', sans-serif EOT;
 
 @advanced text customfont "Custom Font (Select 'Custom' Above)" "Type fontname here"
 ==/UserStyle== */
-
-
-
 @-moz-document domain("toyhou.se") {
-   
-/*This is all the stuff for the fonts! Only edit this if you know what you're doing!*/
-   
-:root{
-   --font-list:/*[[font]]*/;
-   --custom-font: /*[[customfont]]*/;
-}
-   
-body {
-    font-family: var(--font-list);
-	
-	font-size: .9rem;
-	font-weight: 400;
-	line-height: 1.5;
-	
-}
 
-button, input, optgroup, select, textarea {
-	font-family: var(--font-list);
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
-}
+   /*This is all the stuff for the fonts! Only edit this if you know what you're doing!*/
+   :root {
+      --font-list: /*[[font]]*/;
+      --custom-font: /*[[customfont]]*/;
+   }
 
-.tagit-label, span{
-   font-family: var(--font-list);
-}
-   
-/*The tooltip class below. Delete this if you just want the default tooltip font.*/
+   body {
+      font-family: var(--font-list);
+   }
 
-.fr-tooltip {
-	font-family: var(--font-list);
-	
-}
+   button,
+   input,
+   optgroup,
+   select,
+   textarea {
+      font-family: var(--font-list);
+   }
 
-.fr-popup {
-   font-family: var(--font-list);
-	
-}
+   .tagit-label,
+   span {
+      font-family: var(--font-list);
+   }
 
-.ui-widget button, .ui-widget input, .ui-widget select, .ui-widget textarea {
-	font-family: var(--font-list);
-}
-.tooltip {
-	font-family: var(--font-list);
-}
+   /*The tooltip class below. Delete this if you just want the default tooltip font.*/
+   .fr-tooltip {
+      font-family: var(--font-list);
+   }
 
-}
+   .fr-popup {
+      font-family: var(--font-list);
+   }
 
+   .ui-widget button,
+   .ui-widget input,
+   .ui-widget select,
+   .ui-widget textarea {
+      font-family: var(--font-list);
+   }
+   .tooltip {
+      font-family: var(--font-list);
+   }
+}

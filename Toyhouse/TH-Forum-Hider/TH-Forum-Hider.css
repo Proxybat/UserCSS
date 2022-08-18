@@ -1,14 +1,16 @@
 /* ==UserStyle==
-@name           TH Forum Hider
+@name           Hide Forum stuff TH.
 @namespace      github.com/openstyles/stylus
-@description    Anyone else dislike a certain forum. This'll hide what ever you select to hide.
+@description    Anyone else dislike a certain forum. This'll hide what ever you select.
 @version        1.0.0
 @author         Proxybat
 @namespace      https://github.com/Proxybat
 @license        CC-BY-4.0
-@homepageURL https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Forum-Hider
+@homepageURL https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Default-Font-Switcher
 @updateURL https://userstyles.world/api/style/4255.user.css
 @supportURL https://github.com/Proxybat/UserCSS/issues
+
+
 
 @advanced dropdown characterrp 'Hides "Character & RP" section.'{
 characterrp1 "Show" <<<EOT  EOT;
@@ -117,14 +119,10 @@ bug2 "Hide" <<<EOT none !important EOT;
 
 ==/UserStyle== */
 @-moz-document domain("toyhou.se") {
-   /*CHARACTER & RP*/
-   div.forum-category-wrapper:nth-of-type(1),h4.forum-category-title:nth-of-type(1) {
-      display: /*[[characterrp]]*/;
-   }   
    /*character discussion*/
    div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(1) {
       display: /*[[characterdiscussion]]*/;
-   }   
+   }
    /*species discussion*/
    div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(2) {
       display: /*[[speciesdiscussion]]*/;
@@ -133,85 +131,100 @@ bug2 "Hide" <<<EOT none !important EOT;
    div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(3) {
       display: /*[[worlds]]*/;
    }
-   
-   /*COMMERCE*/
-   div.forum-category-wrapper:nth-of-type(2),h4.forum-category-title:nth-of-type(2) {
-      display: /*[[commerce]]*/;
-   }   
+
    /*art marketplace*/
    div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(1) {
       display: /*[[artmarket]]*/;
-   }   
+   }
    /*design marketplace*/
    div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(2) {
       display: /*[[designmarket]]*/;
-   }   
+   }
    /*adoption center*/
    div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(3) {
       display: /*[[adopt]]*/;
-   }   
+   }
    /*service reviews*/
    div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(4) {
       display: /*[[service]]*/;
    }
-   
-   /*CREATIVE*/
-   div.forum-category-wrapper:nth-of-type(3),h4.forum-category-title:nth-of-type(3) {
-      display: /*[[create]]*/;
-   }   
+
    /*creator's corner*/
    div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(1) {
       display: /*[[creator]]*/;
-   }   
+   }
    /*HTML/CSS*/
    div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(2) {
       display: /*[[HTMLCSS]]*/;
-   }   
+   }
    /*art freebies*/
    div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(3) {
       display: /*[[artfree]]*/;
-   }   
+   }
    /*art trades*/
    div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(4) {
       display: /*[[arttrade]]*/;
    }
-   
-   
-   /*FORUM GAMES*/
-   div.forum-category-wrapper:nth-of-type(4),h4.forum-category-title:nth-of-type(4) {
-      display: /*[[forum]]*/;
-   }   
+
    /*art games*/
    div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(1) {
       display: /*[[artgame]]*/;
-   }   
+   }
    /*character games*/
    div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(2) {
       display: /*[[charactergame]]*/;
-   }   
+   }
    /*forum games*/
    div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(3) {
       display: /*[[forumgame]]*/;
-   }      
-   
-   /*GENERAL & SITE*/
-   div.forum-category-wrapper:nth-of-type(5),h4.forum-category-title:nth-of-type(5) {
-      display: /*[[general]]*/;
-   }   
+   }
+
    /*announcements*/
    div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(1) {
       display: /*[[announcement]]*/;
-   }   
+   }
    /*general & off topic*/
    div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(2) {
       display: /*[[gen]]*/;
-   }   
+   }
    /*help & questions*/
    div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(3) {
       display: /*[[help]]*/;
-   }  
+   }
    /*suggestions & bugs*/
    div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(4) {
       display: /*[[bug]]*/;
-   }  
+   }
+}
+@-moz-document domain("toyhou.se") {
+   /*categories*/
+   /*CHARACTER & RP*/
+   div.forum-category-wrapper:nth-of-type(1),
+   h4.forum-category-title:nth-of-type(1) {
+      display: /*[[characterrp]]*/;
+   }
+
+   /*COMMERCE*/
+   div.forum-category-wrapper:nth-of-type(2),
+   h4.forum-category-title:nth-of-type(2) {
+      display: /*[[commerce]]*/;
+   }
+
+   /*CREATIVE*/
+   div.forum-category-wrapper:nth-of-type(3),
+   h4.forum-category-title:nth-of-type(3) {
+      display: /*[[create]]*/;
+   }
+
+   /*FORUM GAMES*/
+   div.forum-category-wrapper:nth-of-type(4),
+   h4.forum-category-title:nth-of-type(4) {
+      display: /*[[forum]]*/;
+   }
+
+   /*GENERAL & SITE*/
+   div.forum-category-wrapper:nth-of-type(5),
+   h4.forum-category-title:nth-of-type(5) {
+      display: /*[[general]]*/;
+   }
 }

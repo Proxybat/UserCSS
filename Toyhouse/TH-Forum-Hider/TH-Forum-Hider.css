@@ -1,22 +1,24 @@
 /* ==UserStyle==
-@name           Hide Forum stuff TH.
-@namespace      github.com/openstyles/stylus
+@name           ToyHouse Forum Hider
 @description    Anyone else dislike a certain forum. This'll hide what ever you select.
 @version        1.0.0
 @author         Proxybat
 @namespace      https://github.com/Proxybat
 @license        CC-BY-4.0
 @homepageURL https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Forum-Hider
-@updateURL https://userstyles.world/api/style/4255.user.css
+@updateURL https://userstyles.world/api/style/6177.user.css
 @supportURL https://github.com/Proxybat/UserCSS/issues
 
-
+@advanced dropdown forumnav 'Hides the forum link in the navbar.'{
+forumnav1 "Show" <<<EOT EOT;
+forumnav2 "Hide" <<<EOT none !important EOT;
+}
 
 @advanced dropdown characterrp 'Hides "Character & RP" section.'{
 characterrp1 "Show" <<<EOT  EOT;
 characterrp2 "Hide" <<<EOT none !important EOT;}
 
-@advanced dropdown characterdiscussion 'Hides Character Discussion.'{
+@advanced dropdown characterdiscussion "Hides Character Discussion." {
 characterdiscussion1 "Show" <<<EOT  EOT;
 characterdiscussion2 "Hide" <<<EOT none !important EOT;}
 
@@ -94,6 +96,11 @@ forumgame1 "Show" <<<EOT  EOT;
 forumgame2 "Hide" <<<EOT none !important EOT;
 } 
 
+@advanced dropdown favgame 'Hides "Fave Exchange" section.'{
+favgame1 "Show" <<<EOT EOT;
+favgame2 "Hide" <<<EOT none !important EOT;
+}
+
 @advanced dropdown general 'Hides "General & Site" section.'{
 general1 "Show" <<<EOT  EOT;
 general2 "Hide" <<<EOT none !important EOT;}
@@ -118,82 +125,106 @@ bug2 "Hide" <<<EOT none !important EOT;
 } 
 
 ==/UserStyle== */
-@-moz-document domain("toyhou.se") {
+@-moz-document url-prefix("https://toyhou.se/~forums") {
+
    /*character discussion*/
-   div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(1),li.hide-on-collapse > [href="/~forums/207.character-discussion"] {
+   div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(1),
+   li.hide-on-collapse > [href="/~forums/207.character-discussion"] {
       display: /*[[characterdiscussion]]*/;
    }
    /*species discussion*/
-   div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(2),li.hide-on-collapse > [href="/~forums/5868.species-discussion"] {
+   div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(2),
+   li.hide-on-collapse > [href="/~forums/5868.species-discussion"] {
       display: /*[[speciesdiscussion]]*/;
    }
    /*worlds*/
-   div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(3),li.hide-on-collapse > [href="/~forums/12.worlds"] {
+   div.forum-category-wrapper:nth-of-type(1) > div.forum-category-forum:nth-of-type(3),
+   li.hide-on-collapse > [href="/~forums/12.worlds"] {
       display: /*[[worlds]]*/;
    }
 
    /*art marketplace*/
-   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(1),li.hide-on-collapse > [href="/~forums/71.art-marketplace"]{
+   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(1),
+   li.hide-on-collapse > [href="/~forums/71.art-marketplace"] {
       display: /*[[artmarket]]*/;
    }
    /*design marketplace*/
-   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(2),li.hide-on-collapse > [href="/~forums/5866.design-marketplace"] {
+   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(2),
+   li.hide-on-collapse > [href="/~forums/5866.design-marketplace"] {
       display: /*[[designmarket]]*/;
    }
    /*adoption center*/
-   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(3),li.hide-on-collapse > [href="/~forums/13.adoption-center"] {
+   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(3),
+   li.hide-on-collapse > [href="/~forums/13.adoption-center"] {
       display: /*[[adopt]]*/;
    }
    /*service reviews*/
-   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(4),li.hide-on-collapse > [href="/~forums/5867.service-reviews"] {
+   div.forum-category-wrapper:nth-of-type(2) > div.forum-category-forum:nth-of-type(4),
+   li.hide-on-collapse > [href="/~forums/5867.service-reviews"] {
       display: /*[[service]]*/;
    }
 
    /*creator's corner*/
-   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(1),li.hide-on-collapse > [href="/~forums/10502.creator-s-corner"] {
+   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(1),
+   li.hide-on-collapse > [href="/~forums/10502.creator-s-corner"] {
       display: /*[[creator]]*/;
    }
    /*HTML/CSS*/
-   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(2),li.hide-on-collapse > [href="/~forums/16.htmlcss-graphics"] {
+   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(2),
+   li.hide-on-collapse > [href="/~forums/16.htmlcss-graphics"] {
       display: /*[[HTMLCSS]]*/;
    }
    /*art freebies*/
-   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(3),li.hide-on-collapse > [href="/~forums/7515.art-freebies"]{
+   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(3),
+   li.hide-on-collapse > [href="/~forums/7515.art-freebies"] {
       display: /*[[artfree]]*/;
    }
    /*art trades*/
-   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(4),li.hide-on-collapse > [href="/~forums/13975.art-trades"] {
+   div.forum-category-wrapper:nth-of-type(3) > div.forum-category-forum:nth-of-type(4),
+   li.hide-on-collapse > [href="/~forums/13975.art-trades"] {
       display: /*[[arttrade]]*/;
    }
 
    /*art games*/
-   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(1),li.hide-on-collapse > [href="/~forums/6753.art-games"] {
+   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(1),
+   li.hide-on-collapse > [href="/~forums/6753.art-games"] {
       display: /*[[artgame]]*/;
    }
    /*character games*/
-   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(2),li.hide-on-collapse > [href="/~forums/13973.character-games-freebies"]
- {
+   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(2),
+   li.hide-on-collapse > [href="/~forums/13973.character-games-freebies"] {
       display: /*[[charactergame]]*/;
    }
    /*forum games*/
-   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(3),li.hide-on-collapse > [href="/~forums/5865.forum-games"] {
+   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(3),
+   li.hide-on-collapse > [href="/~forums/5865.forum-games"] {
       display: /*[[forumgame]]*/;
    }
 
+   /*fav exchange*/
+   div.forum-category-wrapper:nth-of-type(4) > div.forum-category-forum:nth-of-type(4),
+   li.hide-on-collapse > [href="/~forums/43187.fav-exchange"] {
+      display: /*[[favgame]]*/;
+   }
+
    /*announcements*/
-   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(1),li.hide-on-collapse > [href="/~forums/18.announcements"] {
+   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(1),
+   li.hide-on-collapse > [href="/~forums/18.announcements"] {
       display: /*[[announcement]]*/;
    }
    /*general & off topic*/
-   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(2),li.hide-on-collapse > [href="/~forums/11.general-off-topic"]{
+   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(2),
+   li.hide-on-collapse > [href="/~forums/11.general-off-topic"] {
       display: /*[[gen]]*/;
    }
    /*help & questions*/
-   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(3),li.hide-on-collapse > [href="/~forums/14421.help-questions"] {
+   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(3),
+   li.hide-on-collapse > [href="/~forums/14421.help-questions"] {
       display: /*[[help]]*/;
    }
    /*suggestions & bugs*/
-   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(4),li.hide-on-collapse > [href="/~forums/14.suggestions-bugs"] {
+   div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(4),
+   li.hide-on-collapse > [href="/~forums/14.suggestions-bugs"] {
       display: /*[[bug]]*/;
    }
 }
@@ -201,31 +232,55 @@ bug2 "Hide" <<<EOT none !important EOT;
    /*categories*/
    /*CHARACTER & RP*/
    div.forum-category-wrapper:nth-of-type(1),
-   h4.forum-category-title:nth-of-type(1),li.hide-on-collapse.subheader:nth-of-type(2),li.hide-on-collapse > [href="/~forums/207.character-discussion"],li.hide-on-collapse > [href="/~forums/5868.species-discussion"],li.hide-on-collapse > [href="/~forums/12.worlds"] {
+   h4.forum-category-title:nth-of-type(1),
+   li.hide-on-collapse.subheader:nth-of-type(2),
+   li.hide-on-collapse > [href="/~forums/207.character-discussion"],
+   li.hide-on-collapse > [href="/~forums/5868.species-discussion"],
+   li.hide-on-collapse > [href="/~forums/12.worlds"] {
       display: /*[[characterrp]]*/;
    }
 
    /*COMMERCE*/
    div.forum-category-wrapper:nth-of-type(2),
-   h4.forum-category-title:nth-of-type(2),li.hide-on-collapse.subheader:nth-of-type(6),li.hide-on-collapse > [href="/~forums/71.art-marketplace"],li.hide-on-collapse > [href="/~forums/5866.design-marketplace"],li.hide-on-collapse > [href="/~forums/13.adoption-center"],li.hide-on-collapse > [href="/~forums/5867.service-reviews"] {
+   h4.forum-category-title:nth-of-type(2),
+   li.hide-on-collapse.subheader:nth-of-type(6),
+   li.hide-on-collapse > [href="/~forums/71.art-marketplace"],
+   li.hide-on-collapse > [href="/~forums/5866.design-marketplace"],
+   li.hide-on-collapse > [href="/~forums/13.adoption-center"],
+   li.hide-on-collapse > [href="/~forums/5867.service-reviews"] {
       display: /*[[commerce]]*/;
    }
 
    /*CREATIVE*/
    div.forum-category-wrapper:nth-of-type(3),
-   h4.forum-category-title:nth-of-type(3),li.hide-on-collapse.subheader:nth-of-type(11),li.hide-on-collapse > [href="/~forums/10502.creator-s-corner"],li.hide-on-collapse > [href="/~forums/16.htmlcss-graphics"],li.hide-on-collapse > [href="/~forums/7515.art-freebies"],li.hide-on-collapse > [href="/~forums/13975.art-trades"] {
+   h4.forum-category-title:nth-of-type(3),
+   li.hide-on-collapse.subheader:nth-of-type(11),
+   li.hide-on-collapse > [href="/~forums/10502.creator-s-corner"],
+   li.hide-on-collapse > [href="/~forums/16.htmlcss-graphics"],
+   li.hide-on-collapse > [href="/~forums/7515.art-freebies"],
+   li.hide-on-collapse > [href="/~forums/13975.art-trades"] {
       display: /*[[create]]*/;
    }
 
    /*FORUM GAMES*/
    div.forum-category-wrapper:nth-of-type(4),
-   h4.forum-category-title:nth-of-type(4),li.hide-on-collapse.subheader:nth-of-type(16),li.hide-on-collapse > [href="/~forums/6753.art-games"],li.hide-on-collapse > [href="/~forums/13973.character-games-freebies"],li.hide-on-collapse > [href="/~forums/5865.forum-games"] {
+   h4.forum-category-title:nth-of-type(4),
+   li.hide-on-collapse.subheader:nth-of-type(16),
+   li.hide-on-collapse > [href="/~forums/6753.art-games"],
+   li.hide-on-collapse > [href="/~forums/13973.character-games-freebies"],
+   li.hide-on-collapse > [href="/~forums/5865.forum-games"],
+   li.hide-on-collapse > [href="/~forums/43187.fav-exchange"] {
       display: /*[[forum]]*/;
    }
 
    /*GENERAL & SITE*/
    div.forum-category-wrapper:nth-of-type(5),
-   h4.forum-category-title:nth-of-type(5),li.hide-on-collapse.subheader:nth-of-type(20),li.hide-on-collapse > [href="/~forums/18.announcements"],li.hide-on-collapse > [href="/~forums/11.general-off-topic"],li.hide-on-collapse > [href="/~forums/14421.help-questions"],li.hide-on-collapse > [href="/~forums/14.suggestions-bugs"] {
+   h4.forum-category-title:nth-of-type(5),
+   li.hide-on-collapse.subheader:nth-of-type(20),
+   li.hide-on-collapse > [href="/~forums/18.announcements"],
+   li.hide-on-collapse > [href="/~forums/11.general-off-topic"],
+   li.hide-on-collapse > [href="/~forums/14421.help-questions"],
+   li.hide-on-collapse > [href="/~forums/14.suggestions-bugs"] {
       display: /*[[general]]*/;
-   } 
+   }
 }

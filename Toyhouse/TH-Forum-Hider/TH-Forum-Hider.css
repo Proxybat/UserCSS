@@ -45,7 +45,6 @@
 @var checkbox genSec "Hide general & off-topic." 0
 @var checkbox helpSec "Hide help & questions." 0
 @var checkbox bugsSec "Hide suggestions & bugs." 0
-
 ==/UserStyle== */
 @-moz-document url-prefix("https://toyhou.se/") {
     /* hides forum link in the navbar */
@@ -200,9 +199,8 @@
             display: none;
         }
     }
-
     /*suggestions & bugs*/
-    if bugSec {
+    if bugsSec {
         div.forum-category-wrapper:nth-of-type(5) > div.forum-category-forum:nth-of-type(4),
         li.hide-on-collapse > [href="/~forums/14.suggestions-bugs"] {
             display: none;

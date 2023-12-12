@@ -1,7 +1,7 @@
 # ToyHouse Forum Hider
 ---
 
-**This also hides forum categories.**
+**A userstyle made with stylus.**
 
 Anyone else dislike a certain forum? This'll hide what ever you select with the config. It'll even hide whole categories!
 

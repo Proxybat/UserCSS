@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           Toyhouse compact forums.
+@description    `Makes the forum pages more compact.`
+@version        1.0.0
+@author         Proxybat
+@namespace      https://github.com/Proxybat
+@license        CC-BY-4.0
+@supportURL     https://github.com/Proxybat/UserCSS/issues
+==/UserStyle== */
+@-moz-document url-prefix("https://toyhou.se/~forums") {
+   .forum-category-wrapper .forum-category-forum {
+      padding: .5rem .5rem;
+   }
+   .forum-category-table-wrapper table td,
+   .forum-view-table-wrapper table td {
+      padding: .5rem 1.2rem;
+   }
+   .comment .forum-post-post .forum-post-avatar > img,
+   .forum-post .forum-post-post .forum-post-avatar > img {
+      max-width: 80%;
+   }
+   .card-block {
+      flex: 1 1 auto;
+      padding: 1rem;
+   }
+}
+
+https://github.com/Proxybat/UserCSS/tree/07eec082fafffde5fb9e2b2c89ab3d1c4370e2a8/Toyhouse/TH-Forum-Hider
+
+
+https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Compact-Forums

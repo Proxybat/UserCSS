@@ -5,10 +5,9 @@
 @author         Proxybat
 @namespace      https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Forum-Hider
 @license        CC-BY-4.0
-@homepageURL https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Forum-Hider
-@updateURL https://userstyles.world/api/style/6177.user.css
-@supportURL https://github.com/Proxybat/UserCSS/issues
-@preprocessor  stylus
+@homepageURL    https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Forum-Hider
+@supportURL     https://github.com/Proxybat/UserCSS/issues
+@preprocessor   stylus
 
 @var checkbox forumNav "No forum link in navbar." 0
 

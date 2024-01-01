@@ -1,26 +1,102 @@
 /* ==UserStyle==
 @name           Toyhouse Compact Forums
-@description    `Makes the forum pages more compact.`
+@description    `A customizable userstyle that makes the forum pages more compact. (Mobile users use at own risk!)`
 @version        1.0.0
 @author         Proxybat
+@homepageURL    https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Compact-Forums
 @namespace      https://github.com/Proxybat/UserCSS/tree/main/Toyhouse/TH-Compact-Forums
 @license        CC-BY-4.0
 @supportURL     https://github.com/Proxybat/UserCSS/issues
+
+@advanced range forumcatx "Forum Category Horizontal Padding" [0.5,0,2,0.1,'rem']
+@advanced range forumcaty "Forum Category Vertical Padding" [0.5,0,2,0.1,'rem']
+
+@advanced range forumsx "Thread List Horizontal Padding" [1,0.1,2,0.1,'rem']
+@advanced range forumsy "Thread List Vertical Padding" [0.5,0.1,2,0.1,'rem']
+@advanced range lastavatarsize "Last Updated Avatar Size (50px by default)" [50, 35, 100, 1, 'px']
+
+@advanced range postx "Post Horizontal Padding" [1,0.1,2,0.1,'rem']
+@advanced range posty "Post Vertical Padding" [1,0.1,2,0.1,'rem']
+@advanced range commentx "WYSIWYG Editor Horizontal Padding" [1,0.8,2,0.1,'rem']
+@advanced range commenty "WYSIWYG Editor Vertical Padding" [1,0.5,2,0.1,'rem']
+@advanced range postavatarsize "Post Avatar Size (80% by default)" [80, 45, 100, 0.5, '%']
+
 ==/UserStyle== */
 @-moz-document url-prefix("https://toyhou.se/~forums") {
-   .forum-category-wrapper .forum-category-forum {
-      padding: .5rem .5rem;
-   }
-   .forum-category-table-wrapper table td,
-   .forum-view-table-wrapper table td {
-      padding: .5rem 1.2rem;
-   }
-   .comment .forum-post-post .forum-post-avatar > img,
-   .forum-post .forum-post-post .forum-post-avatar > img {
-      max-width: 80%;
-   }
-   .card-block {
-      flex: 1 1 auto;
-      padding: 1rem;
-   }
+    :root {
+        /*forum categories*/
+        --forum-category-pad-x: /*[[forumcatx]]*/;
+        --forum-category-pad-y: /*[[forumcaty]]*/;
+
+        /*forum tables*/
+        --forum-thread-pad-x: /*[[forumsx]]*/;
+        --forum-thread-pad-y: /*[[forumsy]]*/;
+
+        /*reply form*/
+        --forum-reply-pad-x: /*[[commentx]]*/;
+        --forum-reply-pad-y: /*[[commenty]]*/;
+
+        /*thread posts*/
+        --forum-post-pad-x: /*[[postx]]*/;
+        --forum-post-pad-y: /*[[posty]]*/;
+
+        /*AVATARS*/
+        /*forum thread avatar size*/
+        --post-avatar-size: /*[[postavatarsize]]*/;
+        /*last updated avatar size*/
+        --last-updated-avatar-size: /*[[lastavatarsize]]*/;
+    }
+
+    /*forum category section (in /~forums/ page)*/
+    .forum-category-wrapper .forum-category-forum {
+        padding: var(--forum-category-pad-x) var(--forum-category-pad-y);
+    }
+
+    /*forum thread tables*/
+    .forum-category-table-wrapper table td,
+    .forum-view-table-wrapper table td {
+        padding: var(--forum-thread-pad-y) var(--forum-thread-pad-x);
+    }
+
+    /*forum thread posts*/
+    .forum-post-content .card-block {
+        padding: var(--forum-post-pad-y) var(--forum-post-pad-x);
+    }
+    /*og thread post*/
+    .thread-post .card-block {
+        padding: var(--forum-post-pad-y) var(--forum-post-pad-x);
+    }
+
+    /*WYSIWYG form*/
+    .forum-post-form .card-block {
+        padding: var(--forum-reply-pad-y) var(--forum-reply-pad-x);
+    }
+
+    /*AVATARS*/
+    /*last updated avatars*/
+    .forum-last-update img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .forum-last-update .forum-last-update-image {
+        height: var(--last-updated-avatar-size);
+        width: var(--last-updated-avatar-size);
+    }
+
+    .forum-last-update {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forum-last-update-content {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*forum avatars*/
+    .comment .forum-post-post .forum-post-avatar > img,
+    .forum-post .forum-post-post .forum-post-avatar > img {
+        max-width: var(--post-avatar-size);
+    }
 }

@@ -3,7 +3,7 @@
 ## Script Description
 **A userstyle made with stylus.**
 
-Makes the forum pages more compact. Is configurable meaning you can click on th gear icon in stylus and edit how much padding you want and how big you want the icons.
+A customizable/configureable UserStyle that makes the forum pages more compact.
 
 [userstyles.world link](https://userstyles.world/style/6177/toyhouse-forum-hider)
 

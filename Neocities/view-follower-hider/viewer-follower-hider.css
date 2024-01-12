@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name           Neocities - hide followers & view count
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A UserStyle that hides the view count and follower count of websites on neocities. Plus your own.
+@author         Proxybat
+@namespace      https://github.com/Proxybat/UserCSS/tree/main/Neocities/view-follower-hider
+@license        CC-BY-4.0
+@homepageURL    https://github.com/Proxybat/UserCSS/tree/main/Neocities/view-follower-hider
+@supportURL     https://github.com/Proxybat/UserCSS/issues
+==/UserStyle== */
+@-moz-document url("https://neocities.org/") {
+    /* Hides follower count */
+    div.col-50.col:nth-of-type(2) > div:nth-of-type(2) {
+        display: none !important;
+    }
+    /*hides view count*/
+    div.col-50.col:nth-of-type(2) > div:nth-of-type(1) {
+        display: none !important;
+    }
+}
+
+@-moz-document url-prefix("https://neocities.org/site/") {
+    /*hides view count on site pages*/
+    .profile-info > .stats > .stat:nth-of-type(1) {
+        display: none !important;
+    }
+    /*hides follower count on site pages*/
+    .profile-info > .stats > .stat:nth-of-type(2) {
+        display: none !important;
+    }
+}
